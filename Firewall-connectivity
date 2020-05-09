@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for i in {1..5}
+do 
+ping 192.168.2.$i -c 1 > /dev/null
+errorcode=$?
+if [ $errorcode == 0 ];
+then
+echo "connected to device" 192.168.2.$i
+else
+echo "not connected to device" 192.168.2.$i
+fi
+done 
+

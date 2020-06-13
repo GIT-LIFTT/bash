@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for i in {8..9}
+do
+echo config t
+echo int management0/0 
+echo ip address 200.100.100.$i
+echo nameif mgmt
+echo security-level 0
+echo no shut
+echo #######
+done

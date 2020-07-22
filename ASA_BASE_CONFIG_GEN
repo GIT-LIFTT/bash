@@ -8,5 +8,12 @@ echo ip address 200.100.100.$i
 echo nameif mgmt
 echo security-level 0
 echo no shut
+echo exit
+echo ssh version 2
+echo enable password cisco
+echo aaa authentication ssh console LOCAL
+echo ssh key-exchange group dh-group14-sha1
+echo crypto key generate rsa modulus 2048
+echo ssh 0.0.0.0 0.0.0.0 mgmt
 echo #######
 done

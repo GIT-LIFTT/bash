@@ -1,9 +1,8 @@
 #!/bin/bash
-for i in {3..8}
+for i in {1..9}
 do
 ping 200.100.100.$i -c 1 > /dev/null
 errorcode=$?
-echo test
 if [ $errorcode == 0 ];
 then 
 echo 200.100.100.$i connected 

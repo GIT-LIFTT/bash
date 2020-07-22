@@ -1,10 +1,10 @@
 #!/bin/bash
 
-for i in {3..8}
+for i in {1..7}
 do
 echo config t
 echo int mgmt 0 
-echo ip address 200.100.100.$i
+echo ip address 200.100.100.$i 255.255.255.0
 echo no shut
 echo #######
 done
